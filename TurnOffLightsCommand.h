@@ -3,6 +3,7 @@
 
 #include "Command.h"
 #include "SmartRoom.h"
+#include <iostream>
 
 class TurnOffLightsCommand : public Command {
     SmartRoom& room;
