@@ -118,7 +118,7 @@ void SmartHomeApplication::setUpUI() {
 }
 
 void SmartHomeApplication::executeButton(int buttonId) {
-    if (buttonId >= 0 && buttonId < buttons.size()) {
+    if (buttonId >= 0 && buttonId < (int)buttons.size()) {
         buttons[buttonId]->execute();
         std::cout << "Button " << buttonId << " pressed." << std::endl;
     } else {
