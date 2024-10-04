@@ -11,6 +11,14 @@
 #include "Sensor.h"
 #include "LightSensor.h"
 #include "TemperatureSensor.h"
+#include "TurnOnLightsCommand.h"
+#include "TurnOffLightsCommand.h"
+#include "SetLightIntensityCommand.h"
+#include "LockDoorsCommand.h"
+#include "UnlockDoorsCommand.h"
+#include "SetTemperatureCommand.h"
+#include "MacroCommand.h"
+#include "SmartHomeApplication.h"
 #include <memory>
 int main() {
     // Test SmartLight
@@ -250,6 +258,96 @@ int main() {
     room1->removeSmartDevice(1, DeviceType::Light);
     room1->removeSmartDevice(2, DeviceType::Door);
     room1->removeSmartDevice(4, DeviceType::Thermostat);
+
+
+    // Create the SmartRoom as a shared_ptr
+    std::shared_ptr<SmartRoom> room = std::make_shared<SmartRoom>();
+
+    room->addSmartDevice(device1);
+    room->addSmartDevice(device2);
+    room->addSmartDevice(device3);
+    room->addSmartDevice(device4);
+    room->addSmartDevice(device5);
+
+    // Create the commands as shared_ptr
+    std::shared_ptr<Command> turnOnLights = std::make_shared<TurnOnLightsCommand>(*room);
+    std::shared_ptr<Command> turnOffLights = std::make_shared<TurnOffLightsCommand>(*room);
+    std::shared_ptr<Command> setLightIntensity = std::make_shared<SetLightIntensityCommand>(*room, 75);
+    std::shared_ptr<Command> setNightIntensity = std::make_shared<SetLightIntensityCommand>(*room, 0);
+    std::shared_ptr<Command> lockDoors = std::make_shared<LockDoorsCommand>(*room);
+    std::shared_ptr<Command> unlockDoors = std::make_shared<UnlockDoorsCommand>(*room);
+    std::shared_ptr<Command> morningTemp = std::make_shared<SetTemperatureCommand>(*room,16);
+    std::shared_ptr<Command> nightTemp = std::make_shared<SetTemperatureCommand>(*room,25);
+
+    // Create a MacroCommand and add the commands to it
+    MacroCommand morningRoutine;
+    morningRoutine.addCommand(turnOnLights);      // Add turnOnLights command
+    morningRoutine.addCommand(setLightIntensity); // Add setLightIntensity command
+    morningRoutine.addCommand(unlockDoors);         // Add lockDoors command
+    morningRoutine.addCommand(morningTemp);
+
+    MacroCommand nightRoutine;
+    nightRoutine.addCommand(turnOffLights);
+    nightRoutine.addCommand(lockDoors);
+    nightRoutine.addCommand(setNightIntensity);
+    nightRoutine.addCommand(nightTemp);
+
+    std::cout << "Executing nightRoutine MacroCommand:" << std::endl;
+    nightRoutine.execute();
+
+    // Execute the macro command (which will execute all added commands)
+    std::cout << "Executing morningRoutine MacroCommand:" << std::endl;
+    morningRoutine.execute();
+
+    // Create the SmartHomeApplication instance
+    SmartHomeApplication app;
+
+    // Test adding rooms
+    app.addRoom("Living Room");
+    app.addRoom("Kitchen");
+
+    // Test adding devices to the rooms
+    SmartLight* light1 = new SmartLight(1, 100);
+    SmartLight* light2 = new SmartLight(2, 50);
+    SmartThermostat* thermostat1 = new SmartThermostat(3, 22);
+    SmartDoor* door1 = new SmartDoor(4);
+
+    // Add devices to Living Room
+    app.addDevice("Living Room", light1);
+    app.addDevice("Living Room", thermostat1);
+    app.addDevice("Living Room", door1);
+
+    // Add devices to Kitchen
+    app.addDevice("Kitchen", light2);
+
+    // Test removing devices
+    app.removeDevice("Living Room", DeviceType::Light, 1);  // Remove light1
+    app.removeDevice("Living Room", DeviceType::Thermostat, 3);  // Remove thermostat1
+
+    // Test removing a room
+    app.removeRoom("Kitchen");
+
+    // Test selecting a target room
+    app.selectTargetRoom("Living Room");
+
+    // Test setting up the UI for the selected room (Living Room)
+    app.setUpUI();
+
+    // Test executing buttons (turn on/off lights)
+    app.executeButton(0);  // Turn on lights
+    app.executeButton(1);  // Turn off lights
+
+    // Test selecting a non-existent room (should fail)
+    app.selectTargetRoom("Bathroom");  // Room does not exist
+
+    // Test adding a room that already exists (should warn)
+    app.addRoom("Living Room");
+
+    // Clean up dynamic memory
+    delete light1;
+    delete light2;
+    delete thermostat1;
+    delete door1;
 
     return 0;
 }
