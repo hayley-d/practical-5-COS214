@@ -259,6 +259,7 @@ int main() {
     room1->removeSmartDevice(2, DeviceType::Door);
     room1->removeSmartDevice(4, DeviceType::Thermostat);
 
+
     // Create the SmartRoom as a shared_ptr
     std::shared_ptr<SmartRoom> room = std::make_shared<SmartRoom>();
 
@@ -347,7 +348,6 @@ int main() {
     delete light2;
     delete thermostat1;
     delete door1;
-
 
     return 0;
 }
