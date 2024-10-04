@@ -18,6 +18,7 @@ class Sensor;
  * lights, thermostat and doors.
  */
 class SmartRoom {
+public:
   std::map<int, std::shared_ptr<SmartLight>> lights;
   std::map<int, std::shared_ptr<SmartThermostat>> thermostats;
   std::map<int, std::shared_ptr<SmartDoor>> doors;
