@@ -15,7 +15,8 @@ file(GLOB_RECURSE SOURCE_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 file(GLOB_RECURSE HEADER_FILES "${CMAKE_SOURCE_DIR}/src/*.h")
 
 # Test executable for Google Test
-add_executable(tests tests/light_test.cpp tests/smart_room_test.cpp ${SOURCE_FILES} ${HEADER_FILES})
+add_executable(tests tests/light_test.cpp tests/smart_room_test.cpp tests/smart_thermostat_test.cpp tests/smart_thermostat_integrator_test.cpp ${SOURCE_FILES} ${HEADER_FILES}
+        tests/smart_home_application_test.cpp)
 
 # Link Google Test and pthread to the test executable
 target_link_libraries(tests gtest gtest_main pthread)
