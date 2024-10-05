@@ -1,0 +1,5 @@
+<map id="SmartThermostatIntegrator" name="SmartThermostatIntegrator">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,205,181"/>
+<area shape="rect" id="node2" href="$classSmartThermostat.html" title="Concrete implementation of the smart device to represent a smart thermostat." alt="" coords="37,80,173,107"/>
+<area shape="rect" id="node3" href="$classSmartDevice.html" title="Interface for smart devices that defines the basic functionality of a smart device." alt="" coords="52,5,159,32"/>
+</map>

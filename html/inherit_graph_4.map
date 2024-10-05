@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classSmartDevice.html" title="Interface for smart devices that defines the basic functionality of a smart device." alt="" coords="5,56,112,83"/>
+<area shape="rect" id="node2" href="$classSmartDoor.html" title="Concrete implementation of SmartDevice representing a smart door." alt="" coords="182,5,274,32"/>
+<area shape="rect" id="node3" href="$classSmartLight.html" title="Represents a smart light, a concrete implementation of the SmartDevice interface." alt="" coords="181,56,275,83"/>
+<area shape="rect" id="node4" href="$classSmartThermostat.html" title="Concrete implementation of the smart device to represent a smart thermostat." alt="" coords="160,107,296,133"/>
+<area shape="rect" id="node5" href="$classSmartThermostatIntegrator.html" title=" " alt="" coords="344,107,544,133"/>
+</map>

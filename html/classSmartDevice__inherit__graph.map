@@ -1,0 +1,7 @@
+<map id="SmartDevice" name="SmartDevice">
+<area shape="rect" id="node1" title="Interface for smart devices that defines the basic functionality of a smart device." alt="" coords="115,5,222,32"/>
+<area shape="rect" id="node2" href="$classSmartDoor.html" title="Concrete implementation of SmartDevice representing a smart door." alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" href="$classSmartLight.html" title="Represents a smart light, a concrete implementation of the SmartDevice interface." alt="" coords="122,80,215,107"/>
+<area shape="rect" id="node4" href="$classSmartThermostat.html" title="Concrete implementation of the smart device to represent a smart thermostat." alt="" coords="239,80,375,107"/>
+<area shape="rect" id="node5" href="$classSmartThermostatIntegrator.html" title=" " alt="" coords="207,155,407,181"/>
+</map>

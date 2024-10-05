@@ -1,0 +1,4 @@
+<map id="TurnOffLightsCommand" name="TurnOffLightsCommand">
+<area shape="rect" id="node1" title="A command that turns off all lights in a specified smart room." alt="" coords="5,80,180,107"/>
+<area shape="rect" id="node2" href="$classCommand.html" title="Abstract command interface for the Command Pattern." alt="" coords="48,5,137,32"/>
+</map>

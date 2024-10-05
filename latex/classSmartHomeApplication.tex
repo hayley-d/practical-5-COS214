@@ -1,0 +1,177 @@
+\hypertarget{classSmartHomeApplication}{}\doxysection{Smart\+Home\+Application Class Reference}
+\label{classSmartHomeApplication}\index{SmartHomeApplication@{SmartHomeApplication}}
+
+
+Manages a smart home environment, including rooms and devices.  
+
+
+
+
+{\ttfamily \#include $<$Smart\+Home\+Application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSmartHomeApplication_a107ac727025ed2f2635d5af547be3470}\label{classSmartHomeApplication_a107ac727025ed2f2635d5af547be3470}} 
+\mbox{\hyperlink{classSmartHomeApplication_a107ac727025ed2f2635d5af547be3470}{Smart\+Home\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classSmartHomeApplication}{Smart\+Home\+Application}}. Initializes an empty application with no rooms or target room. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartHomeApplication_a4848afcee371dc12ec7633e7724681ec}\label{classSmartHomeApplication_a4848afcee371dc12ec7633e7724681ec}} 
+\mbox{\hyperlink{classSmartHomeApplication_a4848afcee371dc12ec7633e7724681ec}{$\sim$\+Smart\+Home\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classSmartHomeApplication}{Smart\+Home\+Application}}. Cleans up the allocated rooms and buttons. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartHomeApplication_a548cf4bc434fb0e3e69ec2d21bcf001f}{add\+Room}} (const std\+::string \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a new room to the application. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSmartHomeApplication_ac1e04e70e9de0923bfa7bbd0e07c8b51}{remove\+Room}} (const std\+::string \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Removes a room from the application. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSmartHomeApplication_a7506ccae2f60b7e77855bc45ec5da2c2}{add\+Device}} (const std\+::string \&room\+Name, \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$device)
+\begin{DoxyCompactList}\small\item\em Adds a device to a specified room. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSmartHomeApplication_aa142531362a0d9d3e73a515d15045efc}{remove\+Device}} (const std\+::string \&room\+Name, Device\+Type device\+Type, int device\+Id)
+\begin{DoxyCompactList}\small\item\em Removes a device from a specified room by its type and ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSmartHomeApplication_af8dfa976c8daac55dad21419082bc335}{select\+Target\+Room}} (const std\+::string \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Selects a target room for operations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartHomeApplication_a1a82061911209120cf5912ad658650c4}\label{classSmartHomeApplication_a1a82061911209120cf5912ad658650c4}} 
+void \mbox{\hyperlink{classSmartHomeApplication_a1a82061911209120cf5912ad658650c4}{set\+Up\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the user interface with buttons for controlling devices. This method prepares buttons associated with commands for the selected target room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartHomeApplication_a982b3fe2afc1a0e41a52e51c64289b8a}{execute\+Button}} (int button\+Id)
+\begin{DoxyCompactList}\small\item\em Executes the command associated with a specified button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSmartRoom}{Smart\+Room}} $\ast$ \mbox{\hyperlink{classSmartHomeApplication_a21e68904d17e607167c7eb8cccdef278}{get\+Room}} (const std\+::string \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Retrieves a room by its name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a smart home environment, including rooms and devices. 
+
+This class provides functionality to add/remove rooms and devices, select a target room, and set up a user interface for controlling devices. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSmartHomeApplication_a7506ccae2f60b7e77855bc45ec5da2c2}\label{classSmartHomeApplication_a7506ccae2f60b7e77855bc45ec5da2c2}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!addDevice@{addDevice}}
+\index{addDevice@{addDevice}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{addDevice()}{addDevice()}}
+{\footnotesize\ttfamily bool Smart\+Home\+Application\+::add\+Device (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Name,  }\item[{\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+
+
+Adds a device to a specified room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room where the device should be added. \\
+\hline
+{\em device} & A pointer to the smart device to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the device was added successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSmartHomeApplication_a548cf4bc434fb0e3e69ec2d21bcf001f}\label{classSmartHomeApplication_a548cf4bc434fb0e3e69ec2d21bcf001f}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!addRoom@{addRoom}}
+\index{addRoom@{addRoom}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{addRoom()}{addRoom()}}
+{\footnotesize\ttfamily void Smart\+Home\+Application\+::add\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+Adds a new room to the application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSmartHomeApplication_a982b3fe2afc1a0e41a52e51c64289b8a}\label{classSmartHomeApplication_a982b3fe2afc1a0e41a52e51c64289b8a}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!executeButton@{executeButton}}
+\index{executeButton@{executeButton}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{executeButton()}{executeButton()}}
+{\footnotesize\ttfamily void Smart\+Home\+Application\+::execute\+Button (\begin{DoxyParamCaption}\item[{int}]{button\+Id }\end{DoxyParamCaption})}
+
+
+
+Executes the command associated with a specified button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Id} & The ID of the button to be executed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSmartHomeApplication_a21e68904d17e607167c7eb8cccdef278}\label{classSmartHomeApplication_a21e68904d17e607167c7eb8cccdef278}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!getRoom@{getRoom}}
+\index{getRoom@{getRoom}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{getRoom()}{getRoom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSmartRoom}{Smart\+Room}} $\ast$ Smart\+Home\+Application\+::get\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+Retrieves a room by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classSmartRoom}{Smart\+Room}} if found, nullptr otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSmartHomeApplication_aa142531362a0d9d3e73a515d15045efc}\label{classSmartHomeApplication_aa142531362a0d9d3e73a515d15045efc}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!removeDevice@{removeDevice}}
+\index{removeDevice@{removeDevice}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{removeDevice()}{removeDevice()}}
+{\footnotesize\ttfamily bool Smart\+Home\+Application\+::remove\+Device (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Name,  }\item[{Device\+Type}]{device\+Type,  }\item[{int}]{device\+Id }\end{DoxyParamCaption})}
+
+
+
+Removes a device from a specified room by its type and ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room from which the device should be removed. \\
+\hline
+{\em device\+Type} & The type of the device to be removed. \\
+\hline
+{\em device\+Id} & The ID of the device to be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the device was removed successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSmartHomeApplication_ac1e04e70e9de0923bfa7bbd0e07c8b51}\label{classSmartHomeApplication_ac1e04e70e9de0923bfa7bbd0e07c8b51}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!removeRoom@{removeRoom}}
+\index{removeRoom@{removeRoom}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{removeRoom()}{removeRoom()}}
+{\footnotesize\ttfamily bool Smart\+Home\+Application\+::remove\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+Removes a room from the application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room to be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the room was removed successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSmartHomeApplication_af8dfa976c8daac55dad21419082bc335}\label{classSmartHomeApplication_af8dfa976c8daac55dad21419082bc335}} 
+\index{SmartHomeApplication@{SmartHomeApplication}!selectTargetRoom@{selectTargetRoom}}
+\index{selectTargetRoom@{selectTargetRoom}!SmartHomeApplication@{SmartHomeApplication}}
+\doxysubsubsection{\texorpdfstring{selectTargetRoom()}{selectTargetRoom()}}
+{\footnotesize\ttfamily bool Smart\+Home\+Application\+::select\+Target\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Name }\end{DoxyParamCaption})}
+
+
+
+Selects a target room for operations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room to be set as the target. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the target room was set successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Home\+Application.\+h\item 
+Smart\+Home\+Application.\+cpp\end{DoxyCompactItemize}

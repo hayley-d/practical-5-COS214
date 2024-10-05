@@ -1,0 +1,169 @@
+\hypertarget{classSmartLight}{}\doxysection{Smart\+Light Class Reference}
+\label{classSmartLight}\index{SmartLight@{SmartLight}}
+
+
+Represents a smart light, a concrete implementation of the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} interface.  
+
+
+
+
+{\ttfamily \#include $<$Smart\+Light.\+h$>$}
+
+
+
+Inheritance diagram for Smart\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classSmartLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Smart\+Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classSmartLight__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSmartLight_a43e20075ce8f625ca1bde2d15e144a84}{Smart\+Light}} (int id, int intensity=0)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classSmartLight}{Smart\+Light}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartLight_a6b899306b15b306ff782cfb66d88d564}\label{classSmartLight_a6b899306b15b306ff782cfb66d88d564}} 
+\mbox{\hyperlink{classSmartLight_a6b899306b15b306ff782cfb66d88d564}{$\sim$\+Smart\+Light}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classSmartLight}{Smart\+Light}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartLight_af2b7901094127994a33aab8cd28269c9}{set\+Intensity}} (int intensity)
+\begin{DoxyCompactList}\small\item\em Sets the intensity of the smart light. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSmartLight_a37c45f82a22c98059e21e927036e42f9}{get\+Intensity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current intensity of the smart light. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartLight_aa55a29696b7697242c27244be9b557e9}\label{classSmartLight_aa55a29696b7697242c27244be9b557e9}} 
+void \mbox{\hyperlink{classSmartLight_aa55a29696b7697242c27244be9b557e9}{toggle}} () override
+\begin{DoxyCompactList}\small\item\em Toggles the smart light\textquotesingle{}s state (on/off). This method overrides the toggle method in the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} base class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartLight_ad5006931af091b7a0baf9a914b08a9e3}\label{classSmartLight_ad5006931af091b7a0baf9a914b08a9e3}} 
+void \mbox{\hyperlink{classSmartLight_ad5006931af091b7a0baf9a914b08a9e3}{toggle\+On}} () override
+\begin{DoxyCompactList}\small\item\em Turns the smart light on. This method overrides the toggle\+On method in the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} base class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartLight_a4ac7c40ae9eb96b42404f5353e9f4194}\label{classSmartLight_a4ac7c40ae9eb96b42404f5353e9f4194}} 
+void \mbox{\hyperlink{classSmartLight_a4ac7c40ae9eb96b42404f5353e9f4194}{toggle\+Off}} () override
+\begin{DoxyCompactList}\small\item\em Turns the smart light off. This method overrides the toggle\+Off method in the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} base class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSmartLight_a80333c286699cfed269752355b289310}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Gets the current status of the smart light. \end{DoxyCompactList}\item 
+Device\+Type \mbox{\hyperlink{classSmartLight_a1a867879a3974f0b13f05dcb1e1d6ba4}{get\+Device\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Gets the type of device. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSmartLight_a0220b1b7fff7babb603ffc62ebf861c0}{get\+Id}} () override
+\begin{DoxyCompactList}\small\item\em Gets the unique identifier of the smart light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a smart light, a concrete implementation of the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSmartLight_a43e20075ce8f625ca1bde2d15e144a84}\label{classSmartLight_a43e20075ce8f625ca1bde2d15e144a84}} 
+\index{SmartLight@{SmartLight}!SmartLight@{SmartLight}}
+\index{SmartLight@{SmartLight}!SmartLight@{SmartLight}}
+\doxysubsubsection{\texorpdfstring{SmartLight()}{SmartLight()}}
+{\footnotesize\ttfamily Smart\+Light\+::\+Smart\+Light (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{intensity = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classSmartLight}{Smart\+Light}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the smart light. \\
+\hline
+{\em intensity} & The initial brightness level of the light (default is 0). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSmartLight_a1a867879a3974f0b13f05dcb1e1d6ba4}\label{classSmartLight_a1a867879a3974f0b13f05dcb1e1d6ba4}} 
+\index{SmartLight@{SmartLight}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!SmartLight@{SmartLight}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily Device\+Type Smart\+Light\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the type of device. 
+
+\begin{DoxyReturn}{Returns}
+The Device\+Type representing that this is a light. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSmartDevice_aae90deac0d4fabf0187f57698134d3f5}{Smart\+Device}}.
+
+\mbox{\Hypertarget{classSmartLight_a0220b1b7fff7babb603ffc62ebf861c0}\label{classSmartLight_a0220b1b7fff7babb603ffc62ebf861c0}} 
+\index{SmartLight@{SmartLight}!getId@{getId}}
+\index{getId@{getId}!SmartLight@{SmartLight}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Smart\+Light\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the unique identifier of the smart light. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the smart light. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSmartDevice_a6b931b3d378eb0ee5fb137e09524725d}{Smart\+Device}}.
+
+\mbox{\Hypertarget{classSmartLight_a37c45f82a22c98059e21e927036e42f9}\label{classSmartLight_a37c45f82a22c98059e21e927036e42f9}} 
+\index{SmartLight@{SmartLight}!getIntensity@{getIntensity}}
+\index{getIntensity@{getIntensity}!SmartLight@{SmartLight}}
+\doxysubsubsection{\texorpdfstring{getIntensity()}{getIntensity()}}
+{\footnotesize\ttfamily int Smart\+Light\+::get\+Intensity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current intensity of the smart light. 
+
+\begin{DoxyReturn}{Returns}
+The current brightness level of the light. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSmartLight_a80333c286699cfed269752355b289310}\label{classSmartLight_a80333c286699cfed269752355b289310}} 
+\index{SmartLight@{SmartLight}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SmartLight@{SmartLight}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Smart\+Light\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current status of the smart light. 
+
+\begin{DoxyReturn}{Returns}
+A string indicating whether the light is on or off. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSmartDevice_aef66acd7eb1ae4317d2af794af3fa796}{Smart\+Device}}.
+
+\mbox{\Hypertarget{classSmartLight_af2b7901094127994a33aab8cd28269c9}\label{classSmartLight_af2b7901094127994a33aab8cd28269c9}} 
+\index{SmartLight@{SmartLight}!setIntensity@{setIntensity}}
+\index{setIntensity@{setIntensity}!SmartLight@{SmartLight}}
+\doxysubsubsection{\texorpdfstring{setIntensity()}{setIntensity()}}
+{\footnotesize\ttfamily void Smart\+Light\+::set\+Intensity (\begin{DoxyParamCaption}\item[{int}]{intensity }\end{DoxyParamCaption})}
+
+
+
+Sets the intensity of the smart light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intensity} & The new brightness level to set (0-\/100). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Light.\+h\item 
+Smart\+Light.\+cpp\end{DoxyCompactItemize}

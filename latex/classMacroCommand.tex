@@ -1,0 +1,68 @@
+\hypertarget{classMacroCommand}{}\doxysection{Macro\+Command Class Reference}
+\label{classMacroCommand}\index{MacroCommand@{MacroCommand}}
+
+
+A command that encapsulates a sequence of other commands, allowing them to be executed as a group.  
+
+
+
+
+{\ttfamily \#include $<$Macro\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Macro\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classMacroCommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Macro\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classMacroCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMacroCommand_adaa5786f43f82fa24d859455f06473df}\label{classMacroCommand_adaa5786f43f82fa24d859455f06473df}} 
+\mbox{\hyperlink{classMacroCommand_adaa5786f43f82fa24d859455f06473df}{Macro\+Command}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classMacroCommand}{Macro\+Command}}. Initializes an empty macro command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMacroCommand_a14aa6d4b32e0a3a5d1ac5bf53df85cb3}{add\+Command}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCommand}{Command}} $>$ command)
+\begin{DoxyCompactList}\small\item\em Adds a command to the macro command sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMacroCommand_afc184db8e9ee5ea8703fde850e91f7e8}\label{classMacroCommand_afc184db8e9ee5ea8703fde850e91f7e8}} 
+void \mbox{\hyperlink{classMacroCommand_afc184db8e9ee5ea8703fde850e91f7e8}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes all the commands in the macro command sequence. Each command is executed in the order in which it was added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command that encapsulates a sequence of other commands, allowing them to be executed as a group. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMacroCommand_a14aa6d4b32e0a3a5d1ac5bf53df85cb3}\label{classMacroCommand_a14aa6d4b32e0a3a5d1ac5bf53df85cb3}} 
+\index{MacroCommand@{MacroCommand}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!MacroCommand@{MacroCommand}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Macro\+Command\+::add\+Command (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCommand}{Command}} $>$}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a command to the macro command sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & A shared pointer to a command that will be added to the macro. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Macro\+Command.\+h\end{DoxyCompactItemize}

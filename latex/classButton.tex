@@ -1,0 +1,69 @@
+\hypertarget{classButton}{}\doxysection{Button Class Reference}
+\label{classButton}\index{Button@{Button}}
+
+
+Represents a \mbox{\hyperlink{classButton}{Button}} that triggers commands in the Smart Home System.  
+
+
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classButton_aba469197e4dc3eba8e91db6b99f007dd}{Button}} (\mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classButton}{Button}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButton_ae19059971c7a56a5d2d465ffb7f9c705}{set\+Command}} (\mbox{\hyperlink{classCommand}{Command}} $\ast$new\+Command)
+\begin{DoxyCompactList}\small\item\em Sets a new command to the button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a95b36c12ad1f462035c268b6d2957cc5}\label{classButton_a95b36c12ad1f462035c268b6d2957cc5}} 
+void \mbox{\hyperlink{classButton_a95b36c12ad1f462035c268b6d2957cc5}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the command assigned to the button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classButton_a2a001eb9c3cc8ae54768a850dd345002}\label{classButton_a2a001eb9c3cc8ae54768a850dd345002}} 
+\mbox{\hyperlink{classButton_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classButton}{Button}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{classButton}{Button}} that triggers commands in the Smart Home System. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classButton_aba469197e4dc3eba8e91db6b99f007dd}\label{classButton_aba469197e4dc3eba8e91db6b99f007dd}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classButton}{Button}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & A pointer to a command that the button will trigger. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classButton_ae19059971c7a56a5d2d465ffb7f9c705}\label{classButton_ae19059971c7a56a5d2d465ffb7f9c705}} 
+\index{Button@{Button}!setCommand@{setCommand}}
+\index{setCommand@{setCommand}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{setCommand()}{setCommand()}}
+{\footnotesize\ttfamily void Button\+::set\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{new\+Command }\end{DoxyParamCaption})}
+
+
+
+Sets a new command to the button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Command} & A pointer to the new command to be assigned. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Button.\+h\item 
+Button.\+cpp\end{DoxyCompactItemize}

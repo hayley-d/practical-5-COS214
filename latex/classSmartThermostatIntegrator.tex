@@ -1,0 +1,133 @@
+\hypertarget{classSmartThermostatIntegrator}{}\doxysection{Smart\+Thermostat\+Integrator Class Reference}
+\label{classSmartThermostatIntegrator}\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+
+
+Inheritance diagram for Smart\+Thermostat\+Integrator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classSmartThermostatIntegrator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Smart\+Thermostat\+Integrator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classSmartThermostatIntegrator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSmartThermostatIntegrator_a0d340335a936a7124bb6e4b8b8223f7a}\label{classSmartThermostatIntegrator_a0d340335a936a7124bb6e4b8b8223f7a}} 
+{\bfseries Smart\+Thermostat\+Integrator} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classLegacyThermostat}{Legacy\+Thermostat}} $>$ \&legacy\+Device, int id)
+\item 
+\mbox{\Hypertarget{classSmartThermostatIntegrator_ad94f0c02c7478c5153d85cdc58301e0b}\label{classSmartThermostatIntegrator_ad94f0c02c7478c5153d85cdc58301e0b}} 
+double {\bfseries get\+Temperature} () override
+\item 
+std\+::string \mbox{\hyperlink{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Gets the status of the device. Must be implemented by the derived classes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartThermostatIntegrator_ad8869b07d81480724012cdaa744d6ccd}\label{classSmartThermostatIntegrator_ad8869b07d81480724012cdaa744d6ccd}} 
+void {\bfseries set\+Temperature} (double temperature) override
+\item 
+Device\+Type \mbox{\hyperlink{classSmartThermostatIntegrator_aa671ead615bbbc316d626fb751fe7c87}{get\+Device\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Gets the type of device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartThermostatIntegrator_a4109cda47076e81667a3cc56f8296b0d}{toggle}} () override
+\begin{DoxyCompactList}\small\item\em Toggles the device between on and off states. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartThermostatIntegrator_a1bb0abb5a5d3de2fcc256222c42bf6fa}{toggle\+On}} () override
+\begin{DoxyCompactList}\small\item\em Toggles the device on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSmartThermostatIntegrator_a0ab6a5bf671a2766f3ef5ebdb8d84fc8}{toggle\+Off}} () override
+\begin{DoxyCompactList}\small\item\em Toggles the device off. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartThermostatIntegrator_a0ca6d914352e8b506bc5629d42d14112}\label{classSmartThermostatIntegrator_a0ca6d914352e8b506bc5629d42d14112}} 
+bool {\bfseries is\+On} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSmartThermostatIntegrator_aa671ead615bbbc316d626fb751fe7c87}\label{classSmartThermostatIntegrator_aa671ead615bbbc316d626fb751fe7c87}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily Device\+Type Smart\+Thermostat\+Integrator\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the type of device. 
+
+\begin{DoxyReturn}{Returns}
+Device\+Type The type of device (Light/\+Thermostat/\+Door). 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSmartThermostat_a76fac3f7e82fa3e364c581dc44d3adfb}{Smart\+Thermostat}}.
+
+\mbox{\Hypertarget{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}\label{classSmartThermostatIntegrator_af4e977ca88815f134a593147f8763fec}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Smart\+Thermostat\+Integrator\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the status of the device. Must be implemented by the derived classes. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The current status of the device. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSmartThermostat_a4afc2e35008217db53c2f89bf2d53767}{Smart\+Thermostat}}.
+
+\mbox{\Hypertarget{classSmartThermostatIntegrator_a4109cda47076e81667a3cc56f8296b0d}\label{classSmartThermostatIntegrator_a4109cda47076e81667a3cc56f8296b0d}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!toggle@{toggle}}
+\index{toggle@{toggle}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily void Smart\+Thermostat\+Integrator\+::toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Toggles the device between on and off states. 
+
+This method should toggle the current state of the smart device either on to off or off to on. Must be implemented by derived classes. 
+
+Reimplemented from \mbox{\hyperlink{classSmartThermostat_aa06e0ded46e6d7fde473d6265a8784e6}{Smart\+Thermostat}}.
+
+\mbox{\Hypertarget{classSmartThermostatIntegrator_a0ab6a5bf671a2766f3ef5ebdb8d84fc8}\label{classSmartThermostatIntegrator_a0ab6a5bf671a2766f3ef5ebdb8d84fc8}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!toggleOff@{toggleOff}}
+\index{toggleOff@{toggleOff}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{toggleOff()}{toggleOff()}}
+{\footnotesize\ttfamily void Smart\+Thermostat\+Integrator\+::toggle\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Toggles the device off. 
+
+This method should toggle the state of the deivce to off regardless of it\textquotesingle{}s current state. Must be implemented by dereived classes. 
+
+Reimplemented from \mbox{\hyperlink{classSmartThermostat_af167fc65def3950dfe0933a757445155}{Smart\+Thermostat}}.
+
+\mbox{\Hypertarget{classSmartThermostatIntegrator_a1bb0abb5a5d3de2fcc256222c42bf6fa}\label{classSmartThermostatIntegrator_a1bb0abb5a5d3de2fcc256222c42bf6fa}} 
+\index{SmartThermostatIntegrator@{SmartThermostatIntegrator}!toggleOn@{toggleOn}}
+\index{toggleOn@{toggleOn}!SmartThermostatIntegrator@{SmartThermostatIntegrator}}
+\doxysubsubsection{\texorpdfstring{toggleOn()}{toggleOn()}}
+{\footnotesize\ttfamily void Smart\+Thermostat\+Integrator\+::toggle\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Toggles the device on. 
+
+This method should change the state of the device to on regardless of it\textquotesingle{}s current state. Must be implemented by derived classes. 
+
+Reimplemented from \mbox{\hyperlink{classSmartThermostat_a87d57c54e6607a1a4bb3e5f07991813b}{Smart\+Thermostat}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Thermostat\+Integrator.\+h\item 
+Smart\+Thermostat\+Integrator.\+cpp\end{DoxyCompactItemize}
