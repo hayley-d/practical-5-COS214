@@ -1,4 +1,0 @@
-<map id="SmartDoor" name="SmartDoor">
-<area shape="rect" id="node1" title="Concrete implementation of SmartDevice representing a smart door." alt="" coords="13,80,105,107"/>
-<area shape="rect" id="node2" href="$classSmartDevice.html" title="Interface for smart devices that defines the basic functionality of a smart device." alt="" coords="5,5,112,32"/>
-</map>

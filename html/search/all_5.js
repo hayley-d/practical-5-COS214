@@ -1,9 +1,0 @@
-var searchData=
-[
-  ['getdevicetype_10',['getDeviceType',['../classSmartDoor.html#adf54f3122d106d44cafd4fecbda5eb4f',1,'SmartDoor::getDeviceType()'],['../classSmartLight.html#a1a867879a3974f0b13f05dcb1e1d6ba4',1,'SmartLight::getDeviceType()'],['../classSmartThermostat.html#a76fac3f7e82fa3e364c581dc44d3adfb',1,'SmartThermostat::getDeviceType()'],['../classSmartThermostatIntegrator.html#aa671ead615bbbc316d626fb751fe7c87',1,'SmartThermostatIntegrator::getDeviceType()'],['../classSmartDevice.html#aae90deac0d4fabf0187f57698134d3f5',1,'SmartDevice::getDeviceType()']]],
-  ['getid_11',['getId',['../classSmartThermostat.html#abf1c7ab52403b15a07231168ce2ffdba',1,'SmartThermostat::getId()'],['../classSmartLight.html#a0220b1b7fff7babb603ffc62ebf861c0',1,'SmartLight::getId()'],['../classSmartDoor.html#a7c8e9209abb28739d22f9482e6533862',1,'SmartDoor::getId()'],['../classSmartDevice.html#a6b931b3d378eb0ee5fb137e09524725d',1,'SmartDevice::getId()'],['../classSensor.html#aa5ecdd87ed7cf5774affc20c3d2037a9',1,'Sensor::getId()']]],
-  ['getintensity_12',['getIntensity',['../classSmartLight.html#a37c45f82a22c98059e21e927036e42f9',1,'SmartLight']]],
-  ['getroom_13',['getRoom',['../classSmartHomeApplication.html#a21e68904d17e607167c7eb8cccdef278',1,'SmartHomeApplication']]],
-  ['getstatus_14',['getStatus',['../classSmartDevice.html#aef66acd7eb1ae4317d2af794af3fa796',1,'SmartDevice::getStatus()'],['../classSmartDoor.html#a360d422ebfcdf35c8b58a53484894840',1,'SmartDoor::getStatus()'],['../classSmartLight.html#a80333c286699cfed269752355b289310',1,'SmartLight::getStatus()'],['../classSmartThermostat.html#a4afc2e35008217db53c2f89bf2d53767',1,'SmartThermostat::getStatus()'],['../classSmartThermostatIntegrator.html#af4e977ca88815f134a593147f8763fec',1,'SmartThermostatIntegrator::getStatus()']]],
-  ['gettemperature_15',['getTemperature',['../classLegacyThermostat.html#a276a0bb5ca1694411f05c4855c85bee3',1,'LegacyThermostat']]]
-];

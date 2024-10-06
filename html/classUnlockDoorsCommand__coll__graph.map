@@ -1,4 +1,0 @@
-<map id="UnlockDoorsCommand" name="UnlockDoorsCommand">
-<area shape="rect" id="node1" title="A command that unlocks all doors in a specified smart room." alt="" coords="5,80,177,107"/>
-<area shape="rect" id="node2" href="$classCommand.html" title="Abstract command interface for the Command Pattern." alt="" coords="47,5,136,32"/>
-</map>

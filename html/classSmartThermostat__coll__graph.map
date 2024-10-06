@@ -1,4 +1,0 @@
-<map id="SmartThermostat" name="SmartThermostat">
-<area shape="rect" id="node1" title="Concrete implementation of the smart device to represent a smart thermostat." alt="" coords="5,80,141,107"/>
-<area shape="rect" id="node2" href="$classSmartDevice.html" title="Interface for smart devices that defines the basic functionality of a smart device." alt="" coords="20,5,127,32"/>
-</map>

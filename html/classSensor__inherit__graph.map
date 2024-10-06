@@ -1,5 +1,0 @@
-<map id="Sensor" name="Sensor">
-<area shape="rect" id="node1" title="Abstract base class representing a generic sensor that reacts to events." alt="" coords="95,5,161,32"/>
-<area shape="rect" id="node2" href="$classLightSensor.html" title="Concrete representation of the Sensor class." alt="" coords="5,80,104,107"/>
-<area shape="rect" id="node3" href="$classTemperatureSensor.html" title="Concrete representation of the Sensor that will trigger when a temperature event occurs." alt="" coords="129,80,277,107"/>
-</map>

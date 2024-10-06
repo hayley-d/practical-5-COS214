@@ -1,4 +1,0 @@
-<map id="SetTemperatureCommand" name="SetTemperatureCommand">
-<area shape="rect" id="node1" title="A command that sets the temperature in a specified smart room." alt="" coords="5,80,197,107"/>
-<area shape="rect" id="node2" href="$classCommand.html" title="Abstract command interface for the Command Pattern." alt="" coords="57,5,146,32"/>
-</map>
